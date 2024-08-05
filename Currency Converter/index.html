@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        
+</head>
+<body>
+    <h1 class="heading1">Currency Converter</h1>
+    <div class="container">
+
+        <h2 class="heading2"> <span><i class="fa-brands fa-gg-circle"></i></span>&nbsp;Convert</h2>
+        <div class="linebar"></div>
+        <form >
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text">
+            </div>
+            <div class="from-to-flex">
+                <div class="from">
+                    <p>From</p>
+                    <div class="dropdown">
+                        <img src="https://flagsapi.com/US/flat/64.png" />
+                        <select name="from" id="from">
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="dropdown">
+                        <img src="https://flagsapi.com/IN/flat/64.png" />
+                        <select name="to" id="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        <div class="msg">
+            <p class="convertedrate">1USD  = ? INR </p>
+            <button type="button" class="convert-button">Get Exchange Rate</button>
+        </div>
+    </div>
+</body>
+<script src="countrycodes.js"></script>
+<script src="app.js"></script>
+
+</html>

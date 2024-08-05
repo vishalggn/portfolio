@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.heading{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    height: 8vh;
+    line-height: 8vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.choices-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 1rem;
+    position: relative;
+}
+
+.choices{
+    height: 20vh;
+    width:20vh;
+}
+
+.choices img:hover{
+    border: 4px solid black;
+}
+
+.choices img{
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 100px;
+    transition: all 0.2s ease-out;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+
+.score-board p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.score{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 8vh;
+    width: 8vh;
+}
+
+.user{
+    background-color: greenyellow;
+}
+
+.bot{
+    background-color: rgb(46, 185, 254);
+}
+
+.message{
+    font-size: 1.6rem;
+    background-color: rgb(171, 2, 255);
+    color: white;
+    height: 6vh;
+    line-height: 6vh;
+    border-radius: 15px;
+    display: inline;
+    padding: 5px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}   
+
+.reset{
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 10vh;
+    line-height: 6vh;
+    border-radius: 20px;
+    display: inline;
+    padding: 5px 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reset:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.computerChose{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 3vh;
+}
+
+@media (max-width:475px) {
+    .choices-box{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .choices{
+        height: 14vh;
+        width: 14vh;
+    }
+
+    .choices img{
+        height: 14vh;
+        width:14vh;
+    }
+}

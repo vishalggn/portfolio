@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: EpilogueItalic;
+    src: url(./Epilogue-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Epilogue;
+    src: url(./Epilogue-VariableFont_wght.ttf);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    align-items: center;
+    
+}
+
+.navbar a, .access-gain a{
+    color: grey;
+    text-decoration: none;
+    font-family: Epilogue;
+    font-size: 12.5px;
+
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.header-left{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-end;
+    padding: 20px 0;
+
+}
+
+.access-gain{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+#reg {
+    border: 2px solid grey;
+    padding: 10px 18px;  
+    border-radius: 12px;
+}
+
+.main-section{
+    display: flex;
+    align-items: center;
+    padding: 1vw 15vw;
+    justify-content: center;
+}
+
+.main-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    padding-top: 50px;
+}
+
+.main-section-left h1{
+    font-size: 5vw;
+    font-family: Epilogue;
+}
+
+.main-section-left h6{
+    font-size: 1vw;
+    font-family: Epilogue;
+    width: 55%;
+    color:grey;
+    font-weight: 550;
+}
+
+.main-section-left button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 14px;
+    width: 20%;
+    font-size: 0.9vw;
+    font-family: Epilogue;
+    font-weight: 600;
+}
+
+.main-section-left button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s all ease-out;
+}
+
+.clients{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    scale: 0.9;
+    margin-left: -30px;
+}
+
+.main-section-right img{
+    height: 70vh;
+    width:55vh;
+}
+
+.attribution { 
+    margin-top: 5vh;
+    font-size: 12px; 
+    font-family: Epilogue;
+    text-align: center; 
+    padding: 2px ;
+    color: white;
+    background-color: blueviolet;
+}
+
+.attribution a { 
+        color: hsl(0, 0%, 100%); 
+       
+}
+
+.features-menu a, .company-menus a{
+    text-decoration: none;
+    color:grey;
+}
+
+.features-menu{
+    position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+    width: 20vh;
+    top: 40px;
+    left: 70px;
+    gap: 10px;
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px rgba(6, 6, 6, 0.066);
+}
+
+
+.features-menu span{
+    margin-right: 12px;
+   
+}
+
+.features-menu a{
+   display: flex;
+   align-items: center;
+}
+
+.company-menus{
+    position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+    width: 15vh;
+    top: 40px;
+    left: 250px;
+    gap: 10px;
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px rgba(6, 6, 6, 0.066);
+   
+}
+
+.features-menu, .company-menus{
+    display: none;
+    z-index: 1000;
+}
+
+.arrow-down1, .arrow-down2{
+    transform: rotate(0deg);
+    transition: 0.3s all ease-out;
+}
+
+.arrow-movement{
+    transform: rotate(180deg);
+    transition: 0.3s all ease-in;
+}
+
+.menu-icon, .mobile-h1, .mobile-main-section-right, .mobile-menu .logo{
+    display: none;
+}
+
+@media (max-width:475px)  {
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+}
+    
+.menu-icon .bar {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+    transform:x xrotate(45deg) translateX(5px)translateY(14px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.header-left .logo{
+    display: none;
+}
+
+.mobile-menu{
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu .logo{
+    scale: 0.9;
+    display: block;
+}
+
+.main-section-right{
+    display: none;
+}
+
+.mobile-main-section-right{
+    display: block;
+}
+
+.mobile-main-section-right img{
+    display: block;
+    height: 40vh;
+    width:98vw;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pc-h1{
+    display: none;
+}
+
+.main-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vh;
+    padding-top: 50px;
+    position: relative;
+}
+
+.main-section-left .mobile-h1{
+    display: block;
+    font-size: 9vw;
+    text-align: center;
+}
+
+.main-section-left h6{
+    padding: 0 1px;
+    font-size: 4vw;
+    width: 75%;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-section-left button{
+   margin: 0 auto;
+    padding:  10px 15px;
+    width: 27%;
+    font-size: 2.8vw;
+    
+}
+
+.clients{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    margin: 0 auto;
+    scale: 0.7;
+}
+
+.mobile-header{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 40px;
+    align-items: flex-start;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 70%;
+    margin-left: 30%;
+    transition: all 0.3s ease;
+    
+}
+
+.mobile-header.active{
+    display: flex;
+    
+}
+
+.navbar{
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.dropdown1, .dropdown2{
+    position: relative;
+}
+
+.features-menu{
+    position: relative;
+    justify-content: flex-start;
+    top: 0px;
+    left: 0px;
+    box-shadow: none;
+    padding: 20px 0 0 20px;
+}
+
+.company-menus{
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0px;
+    left: 0px;
+    box-shadow: none;  
+    padding: 20px 0 0 20px;
+    gap: 20px;
+}
+
+.access-gain{
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+}
